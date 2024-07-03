@@ -1,0 +1,46 @@
+.app {
+  height: 1500px;
+}
+
+.products {
+  margin: 20px;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.products__single {
+  height: 250px;
+  padding: 20px;
+  background-color: rgb(220, 220, 220, 0.5);
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.products__single > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 15px 0;
+}
+.pagination > span {
+  border: 1px solid black;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.pagination_selected {
+  background-color: rgb(228, 228, 228);
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.pagination_disabled {
+  opacity: 0;
+}
